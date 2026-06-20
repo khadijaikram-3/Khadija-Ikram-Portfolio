@@ -1,0 +1,145 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER & NAVBAR */
+header {
+    background: #1a1a2e;
+    padding: 20px 50px;
+    position: relative; /* for understanding positioning */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #16213e;
+    color: #fff;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 60px 50px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* SERVICES (FLEXBOX) */
+.services {
+    padding: 60px 50px;
+    background: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 30px 20px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 50px;
+    background: #e2e2e2;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* demonstrating relative positioning */
+}
+
+/* RESPONSIVE (CSS GRID used in one section) */
+@media (max-width: 768px) {
+    .service-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
